@@ -1,0 +1,199 @@
+{
+  "pages": [
+    {
+      "pageTitle": "Elintarvikkeet",
+      "data": [
+        {
+          "Nimi": "Omena",
+          "Määrä": "1 kpl",
+          "Massa": "100 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Banaani",
+          "Määrä": "1 kpl",
+          "Massa": "150 g",
+          "Hiilihydraatit": "20 g"
+        },
+        {
+          "Nimi": "Appelsiini",
+          "Määrä": "1 kpl",
+          "Massa": "120 g",
+          "Hiilihydraatit": "15 g"
+        },
+        {
+          "Nimi": "Ruisleipä",
+          "Määrä": "1 siivu",
+          "Massa": "30 g",
+          "Hiilihydraatit": "12 g"
+        },
+        {
+          "Nimi": "Maitolasillinen",
+          "Määrä": "1 dl",
+          "Massa": "100 g",
+          "Hiilihydraatit": "5 g"
+        },
+        {
+          "Nimi": "Jogurtti",
+          "Määrä": "1 prk",
+          "Massa": "150 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Juustosiivu",
+          "Määrä": "1 siivu",
+          "Massa": "20 g",
+          "Hiilihydraatit": "1 g"
+        },
+        {
+          "Nimi": "Kinkkusiivu",
+          "Määrä": "1 siivu",
+          "Massa": "20 g",
+          "Hiilihydraatit": "0 g"
+        },
+        {
+          "Nimi": "Keitetty kananmuna",
+          "Määrä": "1 kpl",
+          "Massa": "50 g",
+          "Hiilihydraatit": "1 g"
+        },
+        {
+          "Nimi": "Riisi",
+          "Määrä": "1 dl",
+          "Massa": "100 g",
+          "Hiilihydraatit": "20 g"
+        }
+      ]
+    },
+    {
+      "pageTitle": "Hedelmät ja marjat",
+      "data": [
+        {
+          "Nimi": "Mansikka",
+          "Määrä": "100 g",
+          "Massa": "100 g",
+          "Hiilihydraatit": "8 g"
+        },
+        {
+          "Nimi": "Mustikka",
+          "Määrä": "100 g",
+          "Massa": "100 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Vadelma",
+          "Määrä": "100 g",
+          "Massa": "100 g",
+          "Hiilihydraatit": "12 g"
+        },
+        {
+          "Nimi": "Kirsikka",
+          "Määrä": "100 g",
+          "Massa": "100 g",
+          "Hiilihydraatit": "15 g"
+        },
+        {
+          "Nimi": "Päärynä",
+          "Määrä": "1 kpl",
+          "Massa": "150 g",
+          "Hiilihydraatit": "15 g"
+        },
+        {
+          "Nimi": "Luumu",
+          "Määrä": "1 kpl",
+          "Massa": "100 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Greippi",
+          "Määrä": "1 kpl",
+          "Massa": "200 g",
+          "Hiilihydraatit": "12 g"
+        },
+        {
+          "Nimi": "Ananas",
+          "Määrä": "100 g",
+          "Massa": "100 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Mango",
+          "Määrä": "1 kpl",
+          "Massa": "200 g",
+          "Hiilihydraatit": "20 g"
+        },
+        {
+          "Nimi": "Kiwi",
+          "Määrä": "1 kpl",
+          "Massa": "70 g",
+          "Hiilihydraatit": "10 g"
+        }
+      ]
+    },
+    {
+      "pageTitle": "Vihannekset",
+      "data": [
+        {
+          "Nimi": "Tomaatti",
+          "Määrä": "1 kpl",
+          "Massa": "100 g",
+          "Hiilihydraatit": "4 g"
+        },
+        {
+          "Nimi": "Kurkku",
+          "Määrä": "1 kpl",
+          "Massa": "200 g",
+          "Hiilihydraatit": "3 g"
+        },
+        {
+          "Nimi": "Paprika",
+          "Määrä": "1 kpl",
+          "Massa": "150 g",
+          "Hiilihydraatit": "6 g"
+        },
+        {
+          "Nimi": "Salaatti",
+          "Määrä": "100 g",
+          "Massa": "100 g",
+          "Hiilihydraatit": "2 g"
+        },
+        {
+          "Nimi": "Sipuli",
+          "Määrä": "1 kpl",
+          "Massa": "100 g",
+          "Hiilihydraatit": "8 g"
+        },
+        {
+          "Nimi": "Porkkana",
+          "Määrä": "1 kpl",
+          "Massa": "100 g",
+          "Hiilihydraatit": "7 g"
+        },
+        {
+          "Nimi": "Parsakaali",
+          "Määrä": "100 g",
+          "Massa": "100 g",
+          "Hiilihydraatit": "5 g"
+        },
+        {
+          "Nimi": "Kukkakaali",
+          "Määrä": "100 g",
+          "Massa": "100 g",
+          "Hiilihydraatit": "4 g"
+        },
+        {
+          "Nimi": "Herne",
+          "Määrä": "100 g",
+          "Massa": "100 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Pavut",
+          "Määrä": "100 g",
+          "Massa": "100 g",
+          "Hiilihydraatit": "15 g"
+        }
+      ]
+    }
+  ]
+}
