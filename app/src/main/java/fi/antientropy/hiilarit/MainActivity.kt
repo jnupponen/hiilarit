@@ -75,7 +75,11 @@ fun FoodDataTable(modifier: Modifier = Modifier, foodData: FoodData) {
 
 @Composable
 fun FoodPageContent(foodPage: FoodPage) {
-    Column(modifier = Modifier.fillMaxSize(), verticalArrangement = Arrangement.Top) {
+    Column(
+        modifier = Modifier.fillMaxSize().padding(start = 16.dp),
+        verticalArrangement = Arrangement.Top,
+
+    ) {
         Text(text = foodPage.pageTitle, style = MaterialTheme.typography.headlineMedium)
         Spacer(modifier = Modifier.height(8.dp))
 
