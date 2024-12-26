@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.pager.HorizontalPager
@@ -19,9 +20,6 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableIntStateOf
-import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
@@ -55,31 +53,48 @@ fun loadFoodData(context: Context): FoodData {
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun FoodDataTable(modifier: Modifier = Modifier, foodData: FoodData) {
-    val currentPage by remember { mutableIntStateOf(0) }
 
-    Column(modifier = modifier) {
-        HorizontalPager(
-            state = rememberPagerState(
-                initialPage = currentPage,
-                pageCount = { foodData.pages.size }),
+    val pagerState = rememberPagerState(
+        initialPage = 0,
+        pageCount = { foodData.pages.size }
+    )
+
+    Column(modifier = modifier.fillMaxSize()) {
+
+        Row(
             modifier = Modifier
-                .weight(1f)
+                .fillMaxWidth()
+                .padding(16.dp),
+            horizontalArrangement = Arrangement.End
+        ) {
 
+            Text(
+                text = "${pagerState.currentPage + 1}/${foodData.pages.size}",
+                style = MaterialTheme.typography.bodyMedium
+            )
+        }
+
+        // Horizontal pager for the actual pages
+        HorizontalPager(
+            state = pagerState,
+            modifier = Modifier
+                .weight(1f)  // Fill remaining space
         ) { page ->
             val foodPage = foodData.pages[page]
             FoodPageContent(foodPage)
         }
     }
-
 }
 
 @Composable
 fun FoodPageContent(foodPage: FoodPage) {
     Column(
-        modifier = Modifier.fillMaxSize().padding(start = 16.dp),
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(start = 16.dp),
         verticalArrangement = Arrangement.Top,
 
-    ) {
+        ) {
         Text(text = foodPage.pageTitle, style = MaterialTheme.typography.headlineMedium)
         Spacer(modifier = Modifier.height(8.dp))
 
