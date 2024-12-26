@@ -6,8 +6,12 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.ExperimentalFoundationApi
+import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -16,16 +20,20 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.google.gson.Gson
 import fi.antientropy.hiilarit.ui.theme.HiilaritTheme
+import kotlinx.coroutines.launch
 
 
 class MainActivity : ComponentActivity() {
@@ -50,38 +58,66 @@ fun loadFoodData(context: Context): FoodData {
     return Gson().fromJson(jsonString, FoodData::class.java)
 }
 
-@OptIn(ExperimentalFoundationApi::class)
+@OptIn(ExperimentalFoundationApi::class, ExperimentalLayoutApi::class)
 @Composable
-fun FoodDataTable(modifier: Modifier = Modifier, foodData: FoodData) {
-
+fun FoodDataTable(
+    modifier: Modifier = Modifier,
+    foodData: FoodData
+) {
+    // PagerState to keep track of current page
     val pagerState = rememberPagerState(
         initialPage = 0,
         pageCount = { foodData.pages.size }
     )
+    val coroutineScope = rememberCoroutineScope()
 
     Column(modifier = modifier.fillMaxSize()) {
-
         Row(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(16.dp),
             horizontalArrangement = Arrangement.End
         ) {
-
             Text(
                 text = "${pagerState.currentPage + 1}/${foodData.pages.size}",
                 style = MaterialTheme.typography.bodyMedium
             )
         }
 
-        // Horizontal pager for the actual pages
         HorizontalPager(
             state = pagerState,
             modifier = Modifier
-                .weight(1f)  // Fill remaining space
+                .weight(1f)
         ) { page ->
             val foodPage = foodData.pages[page]
             FoodPageContent(foodPage)
+        }
+
+        FlowRow(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp)
+        ) {
+            foodData.pages.forEachIndexed { index, page ->
+                // Each "tag" is simply a clickable Text
+                Text(
+                    text = page.pageTitle,
+                    style = MaterialTheme.typography.bodyLarge,
+                    modifier = Modifier
+                        .clip(RoundedCornerShape(16.dp))
+                        .clickable {
+                            // Scroll to the selected page
+                            coroutineScope.launch {
+                                pagerState.animateScrollToPage(index)
+                            }
+                        }
+                        .background(
+                            color = MaterialTheme.colorScheme.secondary.copy(alpha = 0.1f),
+                            shape = RoundedCornerShape(16.dp)
+                        )
+                        .padding(horizontal = 16.dp, vertical = 12.dp)
+                )
+            }
         }
     }
 }
