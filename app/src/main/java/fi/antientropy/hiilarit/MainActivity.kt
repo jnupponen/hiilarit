@@ -6,6 +6,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.ExperimentalFoundationApi
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -74,7 +75,7 @@ fun FoodDataTable(modifier: Modifier = Modifier, foodData: FoodData) {
 
 @Composable
 fun FoodPageContent(foodPage: FoodPage) {
-    Column {
+    Column(modifier = Modifier.fillMaxSize(), verticalArrangement = Arrangement.Top) {
         Text(text = foodPage.pageTitle, style = MaterialTheme.typography.headlineMedium)
         Spacer(modifier = Modifier.height(8.dp))
 
