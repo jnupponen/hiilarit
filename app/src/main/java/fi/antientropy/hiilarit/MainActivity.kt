@@ -1,5 +1,6 @@
 package fi.antientropy.hiilarit
 
+import AccordionTagCloud
 import android.content.Context
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -64,7 +65,6 @@ fun FoodDataTable(
     modifier: Modifier = Modifier,
     foodData: FoodData
 ) {
-    // PagerState to keep track of current page
     val pagerState = rememberPagerState(
         initialPage = 0,
         pageCount = { foodData.pages.size }
@@ -72,6 +72,7 @@ fun FoodDataTable(
     val coroutineScope = rememberCoroutineScope()
 
     Column(modifier = modifier.fillMaxSize()) {
+        // Top row: Page indicator (e.g. "1/17")
         Row(
             modifier = Modifier
                 .fillMaxWidth()
@@ -84,41 +85,25 @@ fun FoodDataTable(
             )
         }
 
+        // HorizontalPager for pages
         HorizontalPager(
             state = pagerState,
-            modifier = Modifier
-                .weight(1f)
+            modifier = Modifier.weight(1f)
         ) { page ->
             val foodPage = foodData.pages[page]
             FoodPageContent(foodPage)
         }
 
-        FlowRow(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(16.dp)
-        ) {
-            foodData.pages.forEachIndexed { index, page ->
-                // Each "tag" is simply a clickable Text
-                Text(
-                    text = page.pageTitle,
-                    style = MaterialTheme.typography.bodyLarge,
-                    modifier = Modifier
-                        .clip(RoundedCornerShape(16.dp))
-                        .clickable {
-                            // Scroll to the selected page
-                            coroutineScope.launch {
-                                pagerState.animateScrollToPage(index)
-                            }
-                        }
-                        .background(
-                            color = MaterialTheme.colorScheme.secondary.copy(alpha = 0.1f),
-                            shape = RoundedCornerShape(16.dp)
-                        )
-                        .padding(horizontal = 16.dp, vertical = 12.dp)
-                )
+        // Accordion tag cloud at the bottom
+        AccordionTagCloud(
+            foodData = foodData,
+            onPageSelected = { index ->
+                // Animate scroll to selected page
+                coroutineScope.launch {
+                    pagerState.animateScrollToPage(index)
+                }
             }
-        }
+        )
     }
 }
 
