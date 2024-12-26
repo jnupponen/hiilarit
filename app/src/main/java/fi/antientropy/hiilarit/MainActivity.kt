@@ -26,9 +26,14 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -109,19 +114,31 @@ fun FoodDataTable(
 
 @Composable
 fun FoodPageContent(foodPage: FoodPage) {
+    var selectedItemIndex by remember { mutableStateOf<Int?>(null) }
+
     Column(
         modifier = Modifier
             .fillMaxSize()
             .padding(start = 16.dp),
-        verticalArrangement = Arrangement.Top,
-
-        ) {
+        verticalArrangement = Arrangement.Top
+    ) {
         Text(text = foodPage.pageTitle, style = MaterialTheme.typography.headlineMedium)
         Spacer(modifier = Modifier.height(8.dp))
 
         Column {
-            foodPage.data.forEach { foodItem ->
-                Row {
+            foodPage.data.forEachIndexed { index, foodItem ->
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .clickable { selectedItemIndex = index }
+                        .background(
+                            if (selectedItemIndex == index) {
+                                MaterialTheme.colorScheme.primaryContainer
+                            } else {
+                                Color.Transparent
+                            }
+                        )
+                ) {
                     Text(text = foodItem.Nimi, modifier = Modifier.weight(2f))
                     Text(text = foodItem.Määrä, modifier = Modifier.weight(1f))
                     Text(text = foodItem.Massa, modifier = Modifier.weight(1f))
