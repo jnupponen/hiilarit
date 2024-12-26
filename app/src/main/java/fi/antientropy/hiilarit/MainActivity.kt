@@ -101,9 +101,9 @@ fun FoodPageContent(foodPage: FoodPage) {
 @Composable
 fun FoodTablePreview() {
     val context = LocalContext.current
-    val foodData = loadFoodData(context) // Load the data for the preview
+    val foodData = loadFoodData(context = context)
     HiilaritTheme {
-        FoodDataTable(foodData = foodData) // Pass the data to the composable
+        FoodDataTable(foodData = foodData)
     }
 }
 
