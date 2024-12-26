@@ -86,7 +86,7 @@ fun FoodPageContent(foodPage: FoodPage) {
         Column {
             foodPage.data.forEach { foodItem ->
                 Row {
-                    Text(text = foodItem.Nimi, modifier = Modifier.weight(1f))
+                    Text(text = foodItem.Nimi, modifier = Modifier.weight(2f))
                     Text(text = foodItem.Määrä, modifier = Modifier.weight(1f))
                     Text(text = foodItem.Massa, modifier = Modifier.weight(1f))
                     Text(text = foodItem.Hiilihydraatit, modifier = Modifier.weight(1f))
