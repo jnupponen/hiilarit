@@ -1,197 +1,1777 @@
 {
   "pages": [
     {
-      "pageTitle": "Elintarvikkeet",
+      "pageTitle": "PERUNA, MAKARONI, RIISI",
       "data": [
         {
-          "Nimi": "Omena",
-          "Määrä": "1 kpl",
-          "Massa": "100 g",
-          "Hiilihydraatit": "10 g"
+          "Nimi": "Kuskus, keitetty",
+          "Määrä": "1 dl",
+          "Massa": "120 g",
+          "Hiilihydraatit": "35 g"
         },
         {
-          "Nimi": "Banaani",
-          "Määrä": "1 kpl",
-          "Massa": "150 g",
+          "Nimi": "Kvinoa, keitetty",
+          "Määrä": "1 dl",
+          "Massa": "60 g",
           "Hiilihydraatit": "20 g"
         },
         {
-          "Nimi": "Appelsiini",
-          "Määrä": "1 kpl",
-          "Massa": "120 g",
-          "Hiilihydraatit": "15 g"
+          "Nimi": "Nuudelit, kuivapaino",
+          "Määrä": "1 pussi",
+          "Massa": "60 g",
+          "Hiilihydraatit": "35-45 g"
         },
         {
-          "Nimi": "Ruisleipä",
-          "Määrä": "1 siivu",
-          "Massa": "30 g",
-          "Hiilihydraatit": "12 g"
-        },
-        {
-          "Nimi": "Maitolasillinen",
+          "Nimi": "Nuudelit, keitetty",
           "Määrä": "1 dl",
-          "Massa": "100 g",
-          "Hiilihydraatit": "5 g"
-        },
-        {
-          "Nimi": "Jogurtti",
-          "Määrä": "1 prk",
-          "Massa": "150 g",
+          "Massa": "45 g",
           "Hiilihydraatit": "10 g"
         },
         {
-          "Nimi": "Juustosiivu",
-          "Määrä": "1 siivu",
-          "Massa": "20 g",
-          "Hiilihydraatit": "1 g"
+          "Nimi": "Pasta, keitetty",
+          "Määrä": "1 dl",
+          "Massa": "65-80 g",
+          "Hiilihydraatit": "15 g"
         },
         {
-          "Nimi": "Kinkkusiivu",
-          "Määrä": "1 siivu",
+          "Nimi": "Pasta, täytetty, tortellini, ravioli, keitetty",
+          "Määrä": "1 dl",
+          "Massa": "70 g",
+          "Hiilihydraatit": "20 g"
+        },
+        {
+          "Nimi": "Peruna, kananmunan kokoinen",
+          "Määrä": "1 kpl",
+          "Massa": "60 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Perunasose, maitoon tehty",
+          "Määrä": "1 dl",
+          "Massa": "85 g",
+          "Hiilihydraatit": "15 g"
+        },
+        {
+          "Nimi": "Perunasose, veteen tehty",
+          "Määrä": "1 dl",
+          "Massa": "85 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Perunat, kerma- ja valkosipuli",
+          "Määrä": "1 dl",
+          "Massa": "100 g",
+          "Hiilihydraatit": "15 g"
+        },
+        {
+          "Nimi": "Ranskanperunat, uunissa",
+          "Määrä": "1 dl",
+          "Massa": "50 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Ranskanperunat, uppopaistetut",
+          "Määrä": "normaalit",
+          "Massa": "90-115 g",
+          "Hiilihydraatit": "30-40 g"
+        },
+        {
+          "Nimi": "Riisi, keitetty",
+          "Määrä": "1 dl",
+          "Massa": "80 g",
+          "Hiilihydraatit": "20 g"
+        },
+        {
+          "Nimi": "Riisiseokset, keitetty",
+          "Määrä": "1 dl",
+          "Massa": "80 g",
+          "Hiilihydraatit": "15 g"
+        }
+      ]
+    },
+    {
+      "pageTitle": "KASTIKKEET",
+      "data": [
+        {
+          "Nimi": "Ketsuppi",
+          "Määrä": "3 rkl",
+          "Massa": "30 g",
+          "Hiilihydraatit": "5 g"
+        },
+        {
+          "Nimi": "Sinappi",
+          "Määrä": "2 rkl",
+          "Massa": "",
+          "Hiilihydraatit": "5 g"
+        },
+        {
+          "Nimi": "Suurustettu kastike",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "5-10 g"
+        },
+        {
+          "Nimi": "Sweet chili ym. kastikkeet",
+          "Määrä": "1 rkl",
+          "Massa": "",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Valmis kastikeaines",
+          "Määrä": "1 pussi",
+          "Massa": "30 g",
+          "Hiilihydraatit": "15 g"
+        },
+        {
+          "Nimi": "Valmiit pastakastikkeet",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "10 g"
+        }
+      ]
+    },
+    {
+      "pageTitle": "KEITOT",
+      "data": [
+        {
+          "Nimi": "Hernekeitto",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "10-15 g"
+        },
+        {
+          "Nimi": "Kasvissosekeitto",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "5-10 g"
+        },
+        {
+          "Nimi": "Pinaattikeitto",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "5-10 g"
+        }
+      ]
+    },
+    {
+      "pageTitle": "VALMISSALAATIT",
+      "data": [
+        {
+          "Nimi": "Italiansalaatti",
+          "Määrä": "1 dl",
+          "Massa": "110 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Perunasalaatti",
+          "Määrä": "1 dl",
+          "Massa": "90 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Punajuurisalaatti",
+          "Määrä": "1 dl",
+          "Massa": "90 g",
+          "Hiilihydraatit": "5-10 g"
+        },
+        {
+          "Nimi": "Raastesalaatti, sisältää hedelmää",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "5 g"
+        }
+      ]
+    },
+    {
+      "pageTitle": "LAATIKOT JA RISOTOT",
+      "data": [
+        {
+          "Nimi": "Kala- ja lihakiusaus",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Lanttu- ja porkkanalaatikko",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "15 g"
+        },
+        {
+          "Nimi": "Lasagne",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "15 g"
+        },
+        {
+          "Nimi": "Lihamakaronilaatikko, broileripasta",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "15 g"
+        },
+        {
+          "Nimi": "Lihaperunasoselaatikko",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "15 g"
+        },
+        {
+          "Nimi": "Maksalaatikko",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "20-25 g"
+        },
+        {
+          "Nimi": "Moussaka, sisältää perunaa",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "15 g"
+        },
+        {
+          "Nimi": "Perunalaatikko, imelletty",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "15 g"
+        },
+        {
+          "Nimi": "Risotto, sis. lihaa/kanaa/kalaa ja kasviksia",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "10-15 g"
+        }
+      ]
+    },
+    {
+      "pageTitle": "MUITA LÄMPIMIÄ RUOKIA",
+      "data": [
+        {
+          "Nimi": "Broilerinuggetit",
+          "Määrä": "1 kpl",
           "Massa": "20 g",
+          "Hiilihydraatit": "3 g"
+        },
+        {
+          "Nimi": "Broileripyörykät",
+          "Määrä": "5 kpl",
+          "Massa": "75 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Falafel-pyörykät",
+          "Määrä": "5 kpl",
+          "Massa": "75 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Grillimakkara, jauhoinen",
+          "Määrä": "1 kpl",
+          "Massa": "100 g",
+          "Hiilihydraatit": "5-10 g"
+        },
+        {
+          "Nimi": "Grillimakkara, yli 80 % lihaa",
+          "Määrä": "1 kpl",
+          "Massa": "100 g",
           "Hiilihydraatit": "0 g"
         },
         {
-          "Nimi": "Keitetty kananmuna",
+          "Nimi": "Jauhelihapihvit, teollinen",
           "Määrä": "1 kpl",
-          "Massa": "50 g",
-          "Hiilihydraatit": "1 g"
+          "Massa": "60 g",
+          "Hiilihydraatit": "5 g"
         },
         {
-          "Nimi": "Riisi",
-          "Määrä": "1 dl",
+          "Nimi": "Kaalikääryleet",
+          "Määrä": "1 kpl",
+          "Massa": "115 g",
+          "Hiilihydraatit": "15 g"
+        },
+        {
+          "Nimi": "Kalapuikot",
+          "Määrä": "1 kpl",
+          "Massa": "25 g",
+          "Hiilihydraatit": "5 g"
+        },
+        {
+          "Nimi": "Kasvispihvit",
+          "Määrä": "1 pihvi",
+          "Massa": "55 g",
+          "Hiilihydraatit": "5-10 g"
+        },
+        {
+          "Nimi": "Lihapyörykät, teollinen",
+          "Määrä": "5 kpl",
+          "Massa": "75 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Mustamakkara",
+          "Määrä": "12 cm",
           "Massa": "100 g",
+          "Hiilihydraatit": "20 g"
+        },
+        {
+          "Nimi": "Nakki",
+          "Määrä": "3 kpl",
+          "Massa": "90 g",
+          "Hiilihydraatit": "0-5 g"
+        },
+        {
+          "Nimi": "Pinaattiohukaiset, teollinen",
+          "Määrä": "4 kpl",
+          "Massa": "60-80 g",
+          "Hiilihydraatit": "10-20 g"
+        },
+        {
+          "Nimi": "Pyttipannu",
+          "Määrä": "1 dl",
+          "Massa": "55 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Taco, kuori",
+          "Määrä": "1 kpl",
+          "Massa": "20 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Tortilla, pohja, keskikokoinen",
+          "Määrä": "1 kpl",
+          "Massa": "40 g",
           "Hiilihydraatit": "20 g"
         }
       ]
     },
     {
-      "pageTitle": "Hedelmät ja marjat",
+      "pageTitle": "PIKARUOAT",
       "data": [
         {
-          "Nimi": "Mansikka",
-          "Määrä": "100 g",
-          "Massa": "100 g",
-          "Hiilihydraatit": "8 g"
+          "Nimi": "Hampurilainen, tavallinen",
+          "Määrä": "1 kpl",
+          "Massa": "",
+          "Hiilihydraatit": "30 g"
         },
         {
-          "Nimi": "Mustikka",
-          "Määrä": "100 g",
+          "Nimi": "Hampurilainen, iso/kerros",
+          "Määrä": "1 kpl",
+          "Massa": "",
+          "Hiilihydraatit": "40-60 g"
+        },
+        {
+          "Nimi": "Lihapiirakka",
+          "Määrä": "1 kpl",
+          "Massa": "120 g",
+          "Hiilihydraatit": "40 g"
+        },
+        {
+          "Nimi": "Kebab pitaleivällä",
+          "Määrä": "1 kpl",
+          "Massa": "",
+          "Hiilihydraatit": "60-70 g"
+        },
+        {
+          "Nimi": "Pizza, pieni eines",
+          "Määrä": "1 kpl",
+          "Massa": "200 g",
+          "Hiilihydraatit": "50-60 g"
+        },
+        {
+          "Nimi": "Pizza, iso eines/ravintola",
+          "Määrä": "1 kpl",
+          "Massa": "300-600 g",
+          "Hiilihydraatit": "80-120 g"
+        },
+        {
+          "Nimi": "Pizza, pala",
+          "Määrä": "1 kpl",
+          "Massa": "75 g",
+          "Hiilihydraatit": "20-25 g"
+        },
+        {
+          "Nimi": "Ranskalaiset, uppopaistettu",
+          "Määrä": "normaalit",
+          "Massa": "90-115 g",
+          "Hiilihydraatit": "30-40 g"
+        },
+        {
+          "Nimi": "Sushi",
+          "Määrä": "1 kpl",
+          "Massa": "25-35 g",
+          "Hiilihydraatit": "5 g"
+        }
+      ]
+    },
+    {
+      "pageTitle": "VIHANNEKSET JA PALKOKASVIT",
+      "data": [
+        {
+          "Nimi": "Bataatti",
+          "Määrä": "1 dl",
           "Massa": "100 g",
+          "Hiilihydraatit": "15 g"
+        },
+        {
+          "Nimi": "Herne, tuore/pakaste",
+          "Määrä": "1 dl",
+          "Massa": "60 g",
+          "Hiilihydraatit": "5 g"
+        },
+        {
+          "Nimi": "Herneet palkoineen",
+          "Määrä": "3 dl",
+          "Massa": "",
+          "Hiilihydraatit": "5 g"
+        },
+        {
+          "Nimi": "Herne-maissi-paprika",
+          "Määrä": "1 dl",
+          "Massa": "60 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Maissinjyvät, pakaste/keitetty",
+          "Määrä": "1 dl",
+          "Massa": "60 g",
+          "Hiilihydraatit": "15 g"
+        },
+        {
+          "Nimi": "Pakastekasvikset (sisältää juureksia)",
+          "Määrä": "1.5 dl",
+          "Massa": "100 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Härkäpapurouhe ja -seos, kuivapaino",
+          "Määrä": "1 dl",
+          "Massa": "60 g",
+          "Hiilihydraatit": "25 g"
+        },
+        {
+          "Nimi": "Härkis, kypsennetty",
+          "Määrä": "1 dl",
+          "Massa": "50-55 g",
+          "Hiilihydraatit": "5 g"
+        },
+        {
+          "Nimi": "Kikherne, keitetty/säilyke",
+          "Määrä": "1 dl",
+          "Massa": "60 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Linssit, keitetty/säilyke",
+          "Määrä": "1 dl",
+          "Massa": "80 g",
+          "Hiilihydraatit": "15 g"
+        },
+        {
+          "Nimi": "Kaurajauhis, Elovena",
+          "Määrä": "1 dl",
+          "Massa": "100 g",
+          "Hiilihydraatit": "25 g"
+        },
+        {
+          "Nimi": "Oumph, soijavalmiste",
+          "Määrä": "1 dl",
+          "Massa": "100 g",
+          "Hiilihydraatit": "0 g"
+        },
+        {
+          "Nimi": "Soijapapu, keitetty",
+          "Määrä": "1 dl",
+          "Massa": "75 g",
+          "Hiilihydraatit": "5 g"
+        },
+        {
+          "Nimi": "Soijapapu, kuivapaino",
+          "Määrä": "1 dl",
+          "Massa": "85 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Pavut, muut, keitetty",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "40-45 g"
+        },
+        {
+          "Nimi": "Pavut, muut, kuivapaino",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Vihreä pitkä papu, keitetty",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "5 g"
+        },
+        {
+          "Nimi": "Quorn, rouhe, sieniproteiini",
+          "Määrä": "1 dl",
+          "Massa": "100 g",
+          "Hiilihydraatit": "15 g"
+        },
+        {
+          "Nimi": "Seitan, vehnägluteeni",
+          "Määrä": "1 dl",
+          "Massa": "100 g",
+          "Hiilihydraatit": "5 g"
+        },
+        {
+          "Nimi": "Soijarouhe, tumma, kuivapaino",
+          "Määrä": "1 dl",
+          "Massa": "35 g",
+          "Hiilihydraatit": "5 g"
+        },
+        {
+          "Nimi": "Soijarouhe, vaalea, kuivapaino",
+          "Määrä": "1 dl",
+          "Massa": "35 g",
+          "Hiilihydraatit": "5 g"
+        },
+        {
+          "Nimi": "Soijasuikaleet, kuivapaino",
+          "Määrä": "1 dl",
+          "Massa": "25 g",
+          "Hiilihydraatit": "5 g"
+        },
+        {
+          "Nimi": "Soijafileet, kuivapaino",
+          "Määrä": "1 kpl",
+          "Massa": "10 g",
+          "Hiilihydraatit": "5 g"
+        },
+        {
+          "Nimi": "Soijapalat, kuivapaino",
+          "Määrä": "1 dl",
+          "Massa": "25 g",
+          "Hiilihydraatit": "5 g"
+        },
+        {
+          "Nimi": "Tempe (tempeh), soijavalmiste",
+          "Määrä": "1 dl",
+          "Massa": "100 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Tofu, soijavalmiste",
+          "Määrä": "1 dl",
+          "Massa": "100 g",
+          "Hiilihydraatit": "0 g"
+        }
+      ]
+    },
+    {
+      "pageTitle": "PÄHKINÄT JA SIEMENET",
+      "data": [
+        {
+          "Nimi": "Cashewpähkinä",
+          "Määrä": "1 dl",
+          "Massa": "60 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Maapähkinä",
+          "Määrä": "1 dl",
+          "Massa": "70 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Manteli",
+          "Määrä": "1 dl",
+          "Massa": "70 g",
+          "Hiilihydraatit": "5 g"
+        },
+        {
+          "Nimi": "Pistaasipähkinä",
+          "Määrä": "1 dl",
+          "Massa": "60 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Useimmat muut pähkinät",
+          "Määrä": "1 dl",
+          "Massa": "100 g",
+          "Hiilihydraatit": "0-5 g"
+        },
+        {
+          "Nimi": "Siemenet",
+          "Määrä": "1 dl",
+          "Massa": "100 g",
+          "Hiilihydraatit": "0-5 g"
+        }
+      ]
+    },
+    {
+      "pageTitle": "HEDELMÄT",
+      "data": [
+        {
+          "Nimi": "Ananas, tuore kuorittu/säilyke hed.mehussa",
+          "Määrä": "2 rengasta",
+          "Massa": "110 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Appelsiini, kuorittu, pienehkö",
+          "Määrä": "1 kpl",
+          "Massa": "130 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Aprikoosi, tuore, paino sisältää kivet",
+          "Määrä": "5 kpl",
+          "Massa": "175 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Banaani, kuorineen, keskikoinen",
+          "Määrä": "1 kpl",
+          "Massa": "190 g",
+          "Hiilihydraatit": "20 g"
+        },
+        {
+          "Nimi": "Kiivi, kuorineen",
+          "Määrä": "1 kpl",
+          "Massa": "95 g",
+          "Hiilihydraatit": "5 g"
+        },
+        {
+          "Nimi": "Kirsikat, paino sisältää kivet",
+          "Määrä": "1 dl/8 kpl",
+          "Massa": "60 g",
+          "Hiilihydraatit": "5 g"
+        },
+        {
+          "Nimi": "Luumu, tuore",
+          "Määrä": "3 kpl",
+          "Massa": "100 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Mandariini/satsuma, kuorittu",
+          "Määrä": "1 kpl",
+          "Massa": "80 g",
+          "Hiilihydraatit": "5 g"
+        },
+        {
+          "Nimi": "Mango/papaija, syötävä osa",
+          "Määrä": "100 g",
+          "Massa": "",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Melonit, kuorittu",
+          "Määrä": "",
+          "Massa": "150 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Omena, ulkomainen, keskikokoinen",
+          "Määrä": "1 kpl",
+          "Massa": "150 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Omena, pieni kotimainen",
+          "Määrä": "1 kpl",
+          "Massa": "80 g",
+          "Hiilihydraatit": "5 g"
+        },
+        {
+          "Nimi": "Persikka/nektariini, kuorineen",
+          "Määrä": "1 kpl",
+          "Massa": "145 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Persikka, säilyke sokeriliemessä",
+          "Määrä": "½ kpl",
+          "Massa": "",
+          "Hiilihydraatit": "5 g"
+        },
+        {
+          "Nimi": "Persimon/sharon/kaki",
+          "Määrä": "½ kpl",
+          "Massa": "100 g",
+          "Hiilihydraatit": "15 g"
+        },
+        {
+          "Nimi": "Päärynä, kuorineen, keskikokoinen",
+          "Määrä": "1 kpl",
+          "Massa": "220 g",
+          "Hiilihydraatit": "15 g"
+        },
+        {
+          "Nimi": "Viinirypäleet",
+          "Määrä": "15-20 kpl",
+          "Massa": "100 g",
+          "Hiilihydraatit": "15 g"
+        }
+      ]
+    },
+    {
+      "pageTitle": "KUIVATUT HEDELMÄT",
+      "data": [
+        {
+          "Nimi": "Ananas/papaija, kuivattu",
+          "Määrä": "",
+          "Massa": "100 g",
+          "Hiilihydraatit": "60 g"
+        },
+        {
+          "Nimi": "Aprikoosi, kuivattu",
+          "Määrä": "3 kpl",
+          "Massa": "20 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Banaanilastut, kuivattu",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "30 g"
+        },
+        {
+          "Nimi": "Luumu, kuivattu",
+          "Määrä": "3 kpl",
+          "Massa": "20 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Mango, kuivattu",
+          "Määrä": "",
+          "Massa": "100 g",
+          "Hiilihydraatit": "75 g"
+        },
+        {
+          "Nimi": "Omena, kuivattu",
+          "Määrä": "",
+          "Massa": "100 g",
+          "Hiilihydraatit": "60 g"
+        },
+        {
+          "Nimi": "Rusinat",
+          "Määrä": "1 rkl",
+          "Massa": "10 g",
+          "Hiilihydraatit": "5 g"
+        },
+        {
+          "Nimi": "Taateli, kuivattu, paino sis. kivet",
+          "Määrä": "3 kpl",
+          "Massa": "25 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Viikuna, kuivattu",
+          "Määrä": "2 kpl",
+          "Massa": "25-30 g",
+          "Hiilihydraatit": "15 g"
+        }
+      ]
+    },
+    {
+      "pageTitle": "MARJAT, SOSEET, HILLOT",
+      "data": [
+        {
+          "Nimi": "Hillo/marmeladi",
+          "Määrä": "1 rkl",
+          "Massa": "",
+          "Hiilihydraatit": "15-20 g"
+        },
+        {
+          "Nimi": "Marjat, tuoreet tai pakastemarjat",
+          "Määrä": "mansikka 2 dl",
+          "Massa": "100 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Mustikka/puolukka",
+          "Määrä": "2 dl",
+          "Massa": "120 g",
           "Hiilihydraatit": "10 g"
         },
         {
           "Nimi": "Vadelma",
-          "Määrä": "100 g",
+          "Määrä": "2 dl",
           "Massa": "100 g",
-          "Hiilihydraatit": "12 g"
+          "Hiilihydraatit": "5 g"
         },
         {
-          "Nimi": "Kirsikka",
-          "Määrä": "100 g",
-          "Massa": "100 g",
-          "Hiilihydraatit": "15 g"
-        },
-        {
-          "Nimi": "Päärynä",
-          "Määrä": "1 kpl",
-          "Massa": "150 g",
-          "Hiilihydraatit": "15 g"
-        },
-        {
-          "Nimi": "Luumu",
-          "Määrä": "1 kpl",
+          "Nimi": "Viinimarja",
+          "Määrä": "2 dl",
           "Massa": "100 g",
           "Hiilihydraatit": "10 g"
         },
         {
-          "Nimi": "Greippi",
-          "Määrä": "1 kpl",
-          "Massa": "200 g",
-          "Hiilihydraatit": "12 g"
+          "Nimi": "Tyrni",
+          "Määrä": "1 dl",
+          "Massa": "55 g",
+          "Hiilihydraatit": "5 g"
         },
         {
-          "Nimi": "Ananas",
-          "Määrä": "100 g",
+          "Nimi": "Marjat, sose/sulaneet",
+          "Määrä": "1 dl",
           "Massa": "100 g",
           "Hiilihydraatit": "10 g"
         },
         {
-          "Nimi": "Mango",
-          "Määrä": "1 kpl",
-          "Massa": "200 g",
-          "Hiilihydraatit": "20 g"
+          "Nimi": "Marja- tai hedelmäsose, lastenruoka",
+          "Määrä": "1 prk",
+          "Massa": "125 g",
+          "Hiilihydraatit": "15-20 g"
         },
         {
-          "Nimi": "Kiwi",
+          "Nimi": "Puolukkasose, sokeroitu",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "30 g"
+        }
+      ]
+    },
+    {
+      "pageTitle": "MAITOVALMISTEET",
+      "data": [
+        {
+          "Nimi": "Maito/piimä/maustamaton jogurtti/viili",
+          "Määrä": "2 dl",
+          "Massa": "",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Maitojuoma, laktoositon",
+          "Määrä": "2 dl",
+          "Massa": "",
+          "Hiilihydraatit": "5 g"
+        },
+        {
+          "Nimi": "Jogurtti/viili maustettu",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "5-15 g"
+        },
+        {
+          "Nimi": "Maitorahka, makeuttamaton",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "5 g"
+        },
+        {
+          "Nimi": "Marja- tai hedelmärahka, sokeria",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "5-15 g"
+        },
+        {
+          "Nimi": "Proteiinirahka/Skyr",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "5-10 g"
+        },
+        {
+          "Nimi": "Proteiinivanukas",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "5-10 g"
+        },
+        {
+          "Nimi": "RisiFrutti",
+          "Määrä": "1 prk",
+          "Massa": "165-175 g",
+          "Hiilihydraatit": "25-30 g"
+        },
+        {
+          "Nimi": "Smoothie, jogurttipohjainen",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Vanukas",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "15-20 g"
+        }
+      ]
+    },
+    {
+      "pageTitle": "MAIDOTTOMAT JUOMAT JA VÄLIPALAT",
+      "data": [
+        {
+          "Nimi": "Kaurajogurtti, maustamaton",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Kaurajogurtti, maustettu",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "10-15 g"
+        },
+        {
+          "Nimi": "Kaurajuoma, maustamaton",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "5-10 g"
+        },
+        {
+          "Nimi": "Kaurajuoma, maustettu/suklaa",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Mantelijuoma, maustamaton",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "0-5 g"
+        },
+        {
+          "Nimi": "Riisijuoma, maustamaton",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Soijajogurtti, maustamaton",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "0-5 g"
+        },
+        {
+          "Nimi": "Soijajogurtti, maustettu",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "5-10 g"
+        },
+        {
+          "Nimi": "Soijajuoma, makeuttamaton",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "0 g"
+        },
+        {
+          "Nimi": "Soijajuoma, makeutettu/maustettu",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "5-20 g"
+        }
+      ]
+    },
+    {
+      "pageTitle": "JÄÄTELÖT",
+      "data": [
+        {
+          "Nimi": "Jäätelö, kermajäätelö",
+          "Määrä": "1 dl",
+          "Massa": "50 g",
+          "Hiilihydraatit": "5-10 g"
+        },
+        {
+          "Nimi": "Jäätelö, pieni puikko",
+          "Määrä": "1 kpl",
+          "Massa": "30 g",
+          "Hiilihydraatit": "5-10 g"
+        },
+        {
+          "Nimi": "Jäätelö, iso puikko",
+          "Määrä": "1 kpl",
+          "Massa": "85 g",
+          "Hiilihydraatit": "20-25 g"
+        },
+        {
+          "Nimi": "Jäätelötuutti, keskikokoinen",
           "Määrä": "1 kpl",
           "Massa": "70 g",
+          "Hiilihydraatit": "20-25 g"
+        },
+        {
+          "Nimi": "Jäätelötuutti, iso",
+          "Määrä": "1 kpl",
+          "Massa": "115 g",
+          "Hiilihydraatit": "30-50 g"
+        },
+        {
+          "Nimi": "Jäätelöpallo, pieni + vohveli",
+          "Määrä": "1 kpl",
+          "Massa": "",
+          "Hiilihydraatit": "15-20 g"
+        },
+        {
+          "Nimi": "Jäätelöpallo, iso + vohveli",
+          "Määrä": "1 kpl",
+          "Massa": "",
+          "Hiilihydraatit": "25-35 g"
+        },
+        {
+          "Nimi": "Mehujää",
+          "Määrä": "1 kpl",
+          "Massa": "",
+          "Hiilihydraatit": "10-20 g"
+        },
+        {
+          "Nimi": "Pehmis kupissa",
+          "Määrä": "1-1.5 dl",
+          "Massa": "",
+          "Hiilihydraatit": "10-15 g"
+        },
+        {
+          "Nimi": "Pehmis + vohveli",
+          "Määrä": "1 kpl",
+          "Massa": "",
+          "Hiilihydraatit": "15-25 g"
+        },
+        {
+          "Nimi": "Sorbetti",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "15-20 g"
+        },
+        {
+          "Nimi": "Kaurajäätelö",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "10-15 g"
+        },
+        {
+          "Nimi": "Riisijäätelö",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "5-15 g"
+        },
+        {
+          "Nimi": "Soijajäätelö",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "10-15 g"
+        }
+      ]
+    },
+    {
+      "pageTitle": "LEIVÄT, PIIRAKAT",
+      "data": [
+        {
+          "Nimi": "Leipä, pieni/ohut viipale",
+          "Määrä": "20 g",
+          "Massa": "10 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Leipä, useimmat viipale- ja palaleivät",
+          "Määrä": "30 g",
+          "Massa": "",
+          "Hiilihydraatit": "15 g"
+        },
+        {
+          "Nimi": "Sämpylä",
+          "Määrä": "50 g",
+          "Massa": "",
+          "Hiilihydraatit": "25 g"
+        },
+        {
+          "Nimi": "Hapankorppu",
+          "Määrä": "3 pientä/2 isoa palaa",
+          "Massa": "",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Karjalanpiirakka, pieni",
+          "Määrä": "1 kpl",
+          "Massa": "35 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Karjalanpiirakka, keskikokoinen",
+          "Määrä": "1 kpl",
+          "Massa": "60-75 g",
+          "Hiilihydraatit": "20-25 g"
+        },
+        {
+          "Nimi": "Näkkileipä, tavallinen",
+          "Määrä": "1 kpl",
+          "Massa": "",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Näkkileipä, ohut",
+          "Määrä": "1 kpl",
+          "Massa": "",
+          "Hiilihydraatit": "5 g"
+        },
+        {
+          "Nimi": "Patonki, 10 cm",
+          "Massa": "50-60 g",
+          "Hiilihydraatit": "25-30 g"
+        },
+        {
+          "Nimi": "Riisikakku",
+          "Määrä": "1 kpl",
+          "Massa": "8 g",
+          "Hiilihydraatit": "5 g"
+        },
+        {
+          "Nimi": "Voileipäkeksi",
+          "Määrä": "1 kpl",
+          "Massa": "",
+          "Hiilihydraatit": "5 g"
+        }
+      ]
+    },
+    {
+      "pageTitle": "PUUROT, MUROT, MYSLIT",
+      "data": [
+        {
+          "Nimi": "Hiutaleet, esim. kaurahiutale",
+          "Määrä": "½ dl",
+          "Massa": "20 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Jauhot",
+          "Määrä": "1 rkl",
+          "Massa": "15 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Puuro, veteen",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Puuro, maitoon",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "15 g"
+        },
+        {
+          "Nimi": "Puuro, marjapuuro, vähäsokerinen",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "15 g"
+        },
+        {
+          "Nimi": "Puuro, vispipuuro, sisältää sokeria",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "15-20 g"
+        },
+        {
+          "Nimi": "Murot",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "10-15 g"
+        },
+        {
+          "Nimi": "Mysli, hedelmäinen ja viljainen",
+          "Määrä": "½ dl",
+          "Massa": "",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Mysli, muromysli",
+          "Määrä": "½ dl",
+          "Massa": "",
+          "Hiilihydraatit": "15 g"
+        },
+        {
+          "Nimi": "Suurimot, ohra raaka",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "50 g"
+        },
+        {
+          "Nimi": "Talkkuna",
+          "Määrä": "1 rkl",
+          "Massa": "15 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Vehnämuroke, esim. Weetabix",
+          "Määrä": "1 kpl",
+          "Massa": "18 g",
           "Hiilihydraatit": "10 g"
         }
       ]
     },
     {
-      "pageTitle": "Vihannekset",
+      "pageTitle": "JÄLKIRUOAT",
       "data": [
         {
-          "Nimi": "Tomaatti",
+          "Nimi": "Hedelmä salaatti, sokeriliemessä",
+          "Määrä": "1 dl",
+          "Massa": "75 g",
+          "Hiilihydraatit": "15 g"
+        },
+        {
+          "Nimi": "Letut (ohukaiset), - Ø 6 cm, pieni",
           "Määrä": "1 kpl",
-          "Massa": "100 g",
-          "Hiilihydraatit": "4 g"
-        },
-        {
-          "Nimi": "Kurkku",
-          "Määrä": "1 kpl",
-          "Massa": "200 g",
-          "Hiilihydraatit": "3 g"
-        },
-        {
-          "Nimi": "Paprika",
-          "Määrä": "1 kpl",
-          "Massa": "150 g",
-          "Hiilihydraatit": "6 g"
-        },
-        {
-          "Nimi": "Salaatti",
-          "Määrä": "100 g",
-          "Massa": "100 g",
-          "Hiilihydraatit": "2 g"
-        },
-        {
-          "Nimi": "Sipuli",
-          "Määrä": "1 kpl",
-          "Massa": "100 g",
-          "Hiilihydraatit": "8 g"
-        },
-        {
-          "Nimi": "Porkkana",
-          "Määrä": "1 kpl",
-          "Massa": "100 g",
-          "Hiilihydraatit": "7 g"
-        },
-        {
-          "Nimi": "Parsakaali",
-          "Määrä": "100 g",
-          "Massa": "100 g",
+          "Massa": "15-20 g",
           "Hiilihydraatit": "5 g"
         },
         {
-          "Nimi": "Kukkakaali",
-          "Määrä": "100 g",
-          "Massa": "100 g",
-          "Hiilihydraatit": "4 g"
+          "Nimi": "Letut (ohukaiset), - Ø 18 cm, iso",
+          "Määrä": "1 kpl",
+          "Massa": "50-70 g",
+          "Hiilihydraatit": "15-20 g"
         },
         {
-          "Nimi": "Herne",
-          "Määrä": "100 g",
-          "Massa": "100 g",
+          "Nimi": "Maitokiisseli, makeutettu sokerilla",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "15 g"
+        },
+        {
+          "Nimi": "Marjakeitto ja -kiisseli, makeutettu sokerilla",
+          "Määrä": "1 dl",
+          "Massa": "",
           "Hiilihydraatit": "10 g"
         },
         {
-          "Nimi": "Pavut",
-          "Määrä": "100 g",
+          "Nimi": "Marjakeitto, sokeriton",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "5 g"
+        },
+        {
+          "Nimi": "Mämmi",
+          "Määrä": "1 dl",
+          "Massa": "120 g",
+          "Hiilihydraatit": "40 g"
+        },
+        {
+          "Nimi": "Pannacotta",
+          "Määrä": "1 dl",
           "Massa": "100 g",
+          "Hiilihydraatit": "15-30 g"
+        },
+        {
+          "Nimi": "Pannukakku, 10 cm x 10 cm pala",
+          "Määrä": "1 pala",
+          "Massa": "85-100 g",
+          "Hiilihydraatit": "20 g"
+        },
+        {
+          "Nimi": "Suklaa- tai kinuskikastike",
+          "Määrä": "2 rkl",
+          "Massa": "",
+          "Hiilihydraatit": "10-15 g"
+        },
+        {
+          "Nimi": "Vaniljakastike",
+          "Määrä": "½ dl",
+          "Massa": "",
+          "Hiilihydraatit": "5-10 g"
+        },
+        {
+          "Nimi": "Vohveli, maitoon tehty, paistettu",
+          "Määrä": "1 kpl",
+          "Massa": "50 g",
           "Hiilihydraatit": "15 g"
+        }
+      ]
+    },
+    {
+      "pageTitle": "LEIVONNAISET",
+      "data": [
+        {
+          "Nimi": "Digestive-keksi",
+          "Määrä": "1 kpl",
+          "Massa": "12 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Korppu",
+          "Määrä": "1 kpl",
+          "Massa": "",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Pikkukeksi/vohveli/piparkakku",
+          "Määrä": "1 kpl",
+          "Massa": "",
+          "Hiilihydraatit": "5 g"
+        },
+        {
+          "Nimi": "Täytekeksi/suklaakeksi",
+          "Määrä": "1 kpl",
+          "Massa": "",
+          "Hiilihydraatit": "10-15 g"
+        },
+        {
+          "Nimi": "Donitsi",
+          "Määrä": "1 kpl",
+          "Massa": "70 g",
+          "Hiilihydraatit": "40-50 g"
+        },
+        {
+          "Nimi": "Hillomunkki",
+          "Määrä": "1 kpl",
+          "Massa": "90 g",
+          "Hiilihydraatit": "50 g"
+        },
+        {
+          "Nimi": "Korvapuusti",
+          "Määrä": "1 kpl",
+          "Massa": "60 g",
+          "Hiilihydraatit": "30 g"
+        },
+        {
+          "Nimi": "Munkki, ei täytettä",
+          "Määrä": "1 kpl",
+          "Massa": "90 g",
+          "Hiilihydraatit": "40 g"
+        },
+        {
+          "Nimi": "Pikkupulla",
+          "Määrä": "1 kpl",
+          "Massa": "",
+          "Hiilihydraatit": "20-25 g"
+        },
+        {
+          "Nimi": "Pullaviipale, ohut",
+          "Määrä": "1 kpl",
+          "Massa": "",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Viineri",
+          "Määrä": "1 kpl",
+          "Massa": "90 g",
+          "Hiilihydraatit": "25-30 g"
+        },
+        {
+          "Nimi": "Voisilmäpulla",
+          "Määrä": "1 kpl",
+          "Massa": "90 g",
+          "Hiilihydraatit": "40-50 g"
+        },
+        {
+          "Nimi": "Joulutorttu",
+          "Määrä": "1 kpl",
+          "Massa": "40 g",
+          "Hiilihydraatit": "15 g"
+        },
+        {
+          "Nimi": "Juustokakku (ilman uunia/uunissa)",
+          "Määrä": "1 kpl",
+          "Massa": "80 g",
+          "Hiilihydraatit": "20-25 g"
+        },
+        {
+          "Nimi": "Kuivakakku, ohut viipale",
+          "Määrä": "1 viip.",
+          "Massa": "",
+          "Hiilihydraatit": "15 g"
+        },
+        {
+          "Nimi": "Kääretorttu, ohut viipale",
+          "Määrä": "1 viip.",
+          "Massa": "",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Marjapiirakka, muropohja",
+          "Määrä": "1/8 piiras",
+          "Massa": "",
+          "Hiilihydraatit": "30 g"
+        },
+        {
+          "Nimi": "Mokkapala",
+          "Määrä": "1 pala",
+          "Massa": "70 g",
+          "Hiilihydraatit": "40 g"
+        },
+        {
+          "Nimi": "Muffini, keskikokoinen",
+          "Määrä": "1 kpl",
+          "Massa": "75 g",
+          "Hiilihydraatit": "30 g"
+        },
+        {
+          "Nimi": "Mutakakku",
+          "Määrä": "1 pala",
+          "Massa": "70 g",
+          "Hiilihydraatit": "35-40 g"
+        },
+        {
+          "Nimi": "Täytekakku, ohut pala",
+          "Määrä": "1 pala",
+          "Massa": "70 g",
+          "Hiilihydraatit": "15 g"
+        },
+        {
+          "Nimi": "Croissant, voisarvi",
+          "Määrä": "1 kpl",
+          "Massa": "50 g",
+          "Hiilihydraatit": "20 g"
+        },
+        {
+          "Nimi": "Pasteija (liha- tai munariisitäyte)",
+          "Määrä": "1 kpl",
+          "Massa": "75 g",
+          "Hiilihydraatit": "20 g"
+        }
+      ]
+    },
+    {
+      "pageTitle": "MAKEISET JA SOKERIT",
+      "data": [
+        {
+          "Nimi": "Hattara",
+          "Määrä": "1 kpl",
+          "Massa": "",
+          "Hiilihydraatit": "40 g"
+        },
+        {
+          "Nimi": "Hedelmä- ja salmiakkikarkit",
+          "Määrä": "1 kpl",
+          "Massa": "100 g",
+          "Hiilihydraatit": "80-90 g"
+        },
+        {
+          "Nimi": "Ksylitolipastilli tai -purukumi",
+          "Määrä": "1 kpl",
+          "Massa": "",
+          "Hiilihydraatit": "0 g"
+        },
+        {
+          "Nimi": "Lakritsi",
+          "Määrä": "1 kpl",
+          "Massa": "100 g",
+          "Hiilihydraatit": "70-75 g"
+        },
+        {
+          "Nimi": "Suklaa",
+          "Määrä": "1 kpl",
+          "Massa": "100 g",
+          "Hiilihydraatit": "50 g"
+        },
+        {
+          "Nimi": "Täytesuklaa",
+          "Määrä": "1 kpl",
+          "Massa": "100 g",
+          "Hiilihydraatit": "60-70 g"
+        },
+        {
+          "Nimi": "Suklaakonvehti",
+          "Määrä": "3 kpl",
+          "Massa": "",
+          "Hiilihydraatit": "70 g"
+        },
+        {
+          "Nimi": "Toffee",
+          "Määrä": "1 kpl",
+          "Massa": "100 g",
+          "Hiilihydraatit": "70 g"
+        },
+        {
+          "Nimi": "Siripiri, Dexal glukoosipastilli",
+          "Määrä": "4-5 kpl",
+          "Massa": "",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Sokeri, hedelmäsokeri, hunaja, siirappi",
+          "Määrä": "2 tl",
+          "Massa": "",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Steviauute- tai aspartaami-makeutusjauhe",
+          "Määrä": "1 tl",
+          "Massa": "",
+          "Hiilihydraatit": "0 g"
+        }
+      ]
+    },
+    {
+      "pageTitle": "SUOLAISET NAPOSTELTAVAT",
+      "data": [
+        {
+          "Nimi": "Juustonaksut",
+          "Määrä": "1 dl",
+          "Massa": "7 g",
+          "Hiilihydraatit": "5 g"
+        },
+        {
+          "Nimi": "Juustonaksut",
+          "Määrä": "100 g",
+          "Massa": "",
+          "Hiilihydraatit": "50-60 g"
+        },
+        {
+          "Nimi": "Maissilastut, nachot",
+          "Määrä": "1 dl",
+          "Massa": "15-20 g",
+          "Hiilihydraatit": "10-15 g"
+        },
+        {
+          "Nimi": "Popcornit, valmiit",
+          "Määrä": "5 dl",
+          "Massa": "25 g",
+          "Hiilihydraatit": "10-15 g"
+        },
+        {
+          "Nimi": "Popcornit, valmiit",
+          "Määrä": "2 litraa",
+          "Massa": "100 g",
+          "Hiilihydraatit": "50-65 g"
+        },
+        {
+          "Nimi": "Sipsit, perunalastut",
+          "Määrä": "1 dl",
+          "Massa": "12 g",
+          "Hiilihydraatit": "5 g"
+        },
+        {
+          "Nimi": "Sipsit, perunalastut",
+          "Määrä": "8 dl",
+          "Massa": "100 g",
+          "Hiilihydraatit": "50-60 g"
+        },
+        {
+          "Nimi": "Sipsit, Raffel ja Hot Rod",
+          "Määrä": "100 g",
+          "Massa": "",
+          "Hiilihydraatit": "65-70 g"
+        },
+        {
+          "Nimi": "Suolakeksi",
+          "Määrä": "4 kpl",
+          "Massa": "10-20 g",
+          "Hiilihydraatit": "5-10 g"
+        },
+        {
+          "Nimi": "Suolapähkinät",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "5 g"
+        },
+        {
+          "Nimi": "Suolatikut",
+          "Määrä": "100 g",
+          "Massa": "",
+          "Hiilihydraatit": "65 g"
+        }
+      ]
+    },
+    {
+      "pageTitle": "JUOMAT",
+      "data": [
+        {
+          "Nimi": "Energiajuoma, sokerillinen",
+          "Määrä": "0,33 l",
+          "Massa": "",
+          "Hiilihydraatit": "40 g"
+        },
+        {
+          "Nimi": "Energiajuoma, sokeriton",
+          "Määrä": "0,33 l",
+          "Massa": "",
+          "Hiilihydraatit": "0-5 g"
+        },
+        {
+          "Nimi": "Glögi, viini- ja mehuglögi",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "10-15 g"
+        },
+        {
+          "Nimi": "Kaakaojauhe, sokerillinen",
+          "Määrä": "2 rkl",
+          "Massa": "12 g",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Kivennäisvesi, maustamaton",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "0 g"
+        },
+        {
+          "Nimi": "Kivennäisvesi, makeutettu",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "0-5 g"
+        },
+        {
+          "Nimi": "Kotikalja",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "0-5 g"
+        },
+        {
+          "Nimi": "Mehu, höyrymehu, laimentamaton, ei sokeria",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Mehu, höyrymehu, laimentamaton, sokeroitu",
+          "Määrä": "2 rkl",
+          "Massa": "",
+          "Hiilihydraatit": "15 g"
+        },
+        {
+          "Nimi": "Mehu, light-mehu, sokeriton",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "0 g"
+        },
+        {
+          "Nimi": "Mehu, mehujuoma, pillimehu",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "5-10 g"
+        },
+        {
+          "Nimi": "Mehu, täysmehu/tuoremehu",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Smoothie, marjaa/hedelmää",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Sima, teollinen",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Virvoitusjuoma, sokeriton",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "0 g"
+        },
+        {
+          "Nimi": "Virvoitusjuoma, sokeroitu",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "10 g"
+        }
+      ]
+    },
+    {
+      "pageTitle": "GLUTEENITTOMAT VILJAVALMISTEET",
+      "data": [
+        {
+          "Nimi": "Viipaleleipä",
+          "Määrä": "1 kpl",
+          "Massa": "40-50 g",
+          "Hiilihydraatit": "15-20 g"
+        },
+        {
+          "Nimi": "Sämpylä",
+          "Määrä": "1 kpl",
+          "Massa": "80-100 g",
+          "Hiilihydraatit": "35-40 g"
+        },
+        {
+          "Nimi": "Näkkileipä",
+          "Määrä": "1 pala",
+          "Massa": "",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Riisikakku",
+          "Määrä": "1 kpl",
+          "Massa": "",
+          "Hiilihydraatit": "5 g"
+        },
+        {
+          "Nimi": "Riisipiirakka",
+          "Määrä": "1 kpl",
+          "Massa": "55-65 g",
+          "Hiilihydraatit": "20 g"
+        },
+        {
+          "Nimi": "Siemennäkkileipä",
+          "Määrä": "1 pala",
+          "Massa": "20 g",
+          "Hiilihydraatit": "5 g"
+        }
+      ]
+    },
+    {
+      "pageTitle": "MUUT GLUTEENITTOMAT TUOTTEET",
+      "data": [
+        {
+          "Nimi": "Gluteeniton hampurilainen, pikaruokala",
+          "Määrä": "1 kpl",
+          "Massa": "",
+          "Hiilihydraatit": "50-70 g"
+        },
+        {
+          "Nimi": "Gluteeniton makaroni, keitetty",
+          "Määrä": "1 dl",
+          "Massa": "65 g",
+          "Hiilihydraatit": "15 g"
+        },
+        {
+          "Nimi": "Riisinuudeli, raaka",
+          "Määrä": "1 dl",
+          "Massa": "55 g",
+          "Hiilihydraatit": "45 g"
+        },
+        {
+          "Nimi": "Gluteeniton pizzapohja, Moilas/Semper",
+          "Määrä": "1 kpl",
+          "Massa": "130-150 g",
+          "Hiilihydraatit": "55-65 g"
+        },
+        {
+          "Nimi": "Gluteeniton tortilla",
+          "Määrä": "1 kpl",
+          "Massa": "35-55 g",
+          "Hiilihydraatit": "20-30 g"
+        },
+        {
+          "Nimi": "Gluteenittomat murot",
+          "Määrä": "1 dl",
+          "Massa": "",
+          "Hiilihydraatit": "10 g"
+        },
+        {
+          "Nimi": "Gluteeniton mysli",
+          "Määrä": "½ dl",
+          "Massa": "",
+          "Hiilihydraatit": "10-15 g"
+        },
+        {
+          "Nimi": "Gluteeniton muffini, kakku",
+          "Määrä": "100 g",
+          "Massa": "",
+          "Hiilihydraatit": "50 g"
+        },
+        {
+          "Nimi": "Gluteeniton pulla",
+          "Määrä": "1 kpl",
+          "Massa": "50-60 g",
+          "Hiilihydraatit": "25-30 g"
+        },
+        {
+          "Nimi": "Gluteeniton pikkukeksi/vohveli/piparkakku",
+          "Määrä": "1 kpl",
+          "Massa": "",
+          "Hiilihydraatit": "5 g"
+        },
+        {
+          "Nimi": "Gluteeniton täytekeksi/suklaakeksi",
+          "Määrä": "1 kpl",
+          "Massa": "",
+          "Hiilihydraatit": "10-15 g"
+        },
+        {
+          "Nimi": "Jäätelön gluteeniton vohveli",
+          "Määrä": "1 kpl",
+          "Massa": "",
+          "Hiilihydraatit": "10 g"
         }
       ]
     }
