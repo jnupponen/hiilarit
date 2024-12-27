@@ -34,10 +34,11 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.google.gson.Gson
 import fi.antientropy.hiilarit.ui.theme.HiilaritTheme
 import kotlinx.coroutines.launch
-
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
+import kotlinx.serialization.json.Json
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -58,7 +59,7 @@ class MainActivity : ComponentActivity() {
 fun loadFoodData(context: Context): FoodData {
     val jsonString =
         context.resources.openRawResource(R.raw.data).bufferedReader().use { it.readText() }
-    return Gson().fromJson(jsonString, FoodData::class.java)
+    return Json.decodeFromString(jsonString)
 }
 
 @OptIn(ExperimentalFoundationApi::class, ExperimentalLayoutApi::class)
@@ -136,16 +137,15 @@ fun FoodPageContent(foodPage: FoodPage) {
                             }
                         )
                 ) {
-                    Text(text = foodItem.Nimi, modifier = Modifier.weight(2f))
-                    Text(text = foodItem.Määrä, modifier = Modifier.weight(1f))
-                    Text(text = foodItem.Massa, modifier = Modifier.weight(1f))
-                    Text(text = foodItem.Hiilihydraatit, modifier = Modifier.weight(1f))
+                    Text(text = foodItem.nimi, modifier = Modifier.weight(2f))
+                    Text(text = foodItem.maara, modifier = Modifier.weight(1f))
+                    Text(text = foodItem.massa, modifier = Modifier.weight(1f))
+                    Text(text = foodItem.hiilihydraatit, modifier = Modifier.weight(1f))
                 }
             }
         }
     }
 }
-
 
 @Preview(showBackground = true)
 @Composable
@@ -157,18 +157,20 @@ fun FoodTablePreview() {
     }
 }
 
+@Serializable
+data class FoodData(val pages: List<FoodPage>)
+
+@Serializable
+data class FoodPage(val pageTitle: String, val data: List<FoodItem>)
+
+@Serializable
 data class FoodItem(
-    val Nimi: String,
-    val Määrä: String,
-    val Massa: String,
-    val Hiilihydraatit: String
-)
-
-data class FoodPage(
-    val pageTitle: String,
-    val data: List<FoodItem>
-)
-
-data class FoodData(
-    val pages: List<FoodPage>
+    @SerialName("Nimi")
+    val nimi: String,
+    @SerialName("Määrä")
+    val maara: String,
+    @SerialName("Massa")
+    val massa: String,
+    @SerialName("Hiilihydraatit")
+    val hiilihydraatit: String
 )

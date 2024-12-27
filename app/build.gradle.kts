@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     id("io.gitlab.arturbosch.detekt") version ("1.23.7")
+    id("org.jetbrains.kotlin.plugin.serialization") version ("2.1.0")
 }
 
 android {
@@ -50,7 +51,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    implementation(libs.gson)
+    implementation(libs.jetbrains.kotlinx.serialization.json)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
