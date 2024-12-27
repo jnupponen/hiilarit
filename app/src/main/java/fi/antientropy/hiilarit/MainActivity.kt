@@ -50,6 +50,21 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+@Composable
+fun PageIndicator(currentPage: Int, totalPages: Int) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(16.dp),
+        horizontalArrangement = Arrangement.End
+    ) {
+        Text(
+            text = "${currentPage + 1}/$totalPages",
+            style = MaterialTheme.typography.bodyMedium
+        )
+    }
+}
+
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun FoodDataTable(
@@ -64,17 +79,7 @@ fun FoodDataTable(
 
     Column(modifier = modifier.fillMaxSize()) {
         // Top row: Page indicator (e.g. "1/17")
-        Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(16.dp),
-            horizontalArrangement = Arrangement.End
-        ) {
-            Text(
-                text = "${pagerState.currentPage + 1}/${foodData.pages.size}",
-                style = MaterialTheme.typography.bodyMedium
-            )
-        }
+        PageIndicator(currentPage = pagerState.currentPage, totalPages = foodData.pages.size) // Use PageIndicator
 
         // HorizontalPager for pages
         HorizontalPager(
