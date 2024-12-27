@@ -57,7 +57,7 @@ fun AccordionTagCloud(
                 .fillMaxWidth()
                 .padding(16.dp),
             horizontalArrangement = Arrangement.spacedBy(16.dp), // Use spacedBy for horizontal spacing
-            verticalArrangement = Arrangement.spacedBy(16.dp)  // Use spacedBy for vertical spacing
+            verticalArrangement = Arrangement.spacedBy(16.dp) // Use spacedBy for vertical spacing
         ) {
             foodData.pages.forEachIndexed { index, page ->
                 Text(
