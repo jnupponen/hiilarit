@@ -1,6 +1,5 @@
 package fi.antientropy.hiilarit
 
-import android.content.Context
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -34,7 +33,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import fi.antientropy.hiilarit.ui.theme.HiilaritTheme
 import kotlinx.coroutines.launch
-import kotlinx.serialization.json.Json
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -50,12 +48,6 @@ class MainActivity : ComponentActivity() {
             }
         }
     }
-}
-
-fun loadFoodData(context: Context): FoodData {
-    val jsonString =
-        context.resources.openRawResource(R.raw.data).bufferedReader().use { it.readText() }
-    return Json.decodeFromString(jsonString)
 }
 
 @OptIn(ExperimentalFoundationApi::class)
@@ -152,4 +144,3 @@ fun FoodTablePreview() {
         FoodDataTable(foodData = foodData)
     }
 }
-
