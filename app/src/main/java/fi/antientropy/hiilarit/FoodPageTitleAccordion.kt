@@ -26,7 +26,7 @@ import androidx.compose.ui.unit.dp
 
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
-fun AccordionTagCloud(
+fun FoodPageTitleAccordion(
     foodData: FoodData,
     onPageSelected: (Int) -> Unit
 ) {

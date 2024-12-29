@@ -85,7 +85,7 @@ fun MainView(
         }
 
         // Accordion tag cloud at the bottom
-        AccordionTagCloud(
+        FoodPageTitleAccordion(
             foodData = foodData,
             onPageSelected = { index ->
                 // Animate scroll to selected page
