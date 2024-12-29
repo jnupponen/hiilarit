@@ -6,7 +6,10 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Icon
 import androidx.compose.material3.SearchBar
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -75,7 +78,12 @@ fun FoodSearch(
             },
             modifier = Modifier.fillMaxWidth(),
             // Optional icons:
-            leadingIcon = { /* Add a leading icon if you wish */ },
+            leadingIcon = {
+                Icon(
+                    imageVector = Icons.Filled.Search,
+                    contentDescription = "Search"
+                )
+            },
             trailingIcon = { /* Add a trailing icon if you wish */ }
         ) {
             // When the search bar is active, show the real-time results in a LazyColumn
