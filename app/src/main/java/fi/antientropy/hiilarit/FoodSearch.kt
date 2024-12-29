@@ -2,6 +2,7 @@ package fi.antientropy.hiilarit
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -9,9 +10,12 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
+import androidx.compose.material3.LocalTextStyle
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.SearchBar
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -59,49 +63,56 @@ fun FoodSearch(
             }
         }
     }
-    // Material3 SearchBar (Experimental API)
-    SearchBar(
-        query = query,
-        onQueryChange = { query = it },
-        onSearch = {
-            // Called when the user hits the search keyboard action
-            // Optionally close the search to show main content
-            focusManager.clearFocus()
-            active = false
-        },
-        active = active,
-        onActiveChange = { active = it },
-        placeholder = {
-            Text(text = "Etsi ruokaa...")
-        },
-        modifier = Modifier.fillMaxWidth(),
-        // Optional icons:
-        leadingIcon = {
-            Icon(
-                imageVector = Icons.Filled.Search,
-                contentDescription = "Search"
-            )
-        },
-        trailingIcon = { /* Add a trailing icon if you wish */ }
-    ) {
-        // When the search bar is active, show the real-time results in a LazyColumn
-        LazyColumn {
-            items(filteredItems) { (pageIndex, itemIndex, foodItem) ->
+    CompositionLocalProvider(LocalTextStyle provides MaterialTheme.typography.bodyLarge) {
+        // Material3 SearchBar (Experimental API)
+        SearchBar(
+            query = query,
+            onQueryChange = { query = it },
+            onSearch = {
+                // Called when the user hits the search keyboard action
+                // Optionally close the search to show main content
+                focusManager.clearFocus()
+                active = false
+            },
+            active = active,
+            onActiveChange = { active = it },
+            placeholder = {
                 Text(
-                    text = foodItem.nimi,
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .clickable {
-                            // When a search result is clicked:
-                            onItemSelected(pageIndex, itemIndex)
-                            // Hide keyboard, collapse SearchBar
-                            focusManager.clearFocus()
-                            active = false
-                        }
-                        .padding(8.dp),
-                    maxLines = 1,
-                    overflow = TextOverflow.Ellipsis
+                    text = "Etsi ruokaa...",
+                    maxLines = 1
                 )
+            },
+            modifier = Modifier
+                .fillMaxWidth()
+                .heightIn(min = 56.dp),
+            // Optional icons:
+            leadingIcon = {
+                Icon(
+                    imageVector = Icons.Filled.Search,
+                    contentDescription = "Search"
+                )
+            },
+            trailingIcon = { /* Add a trailing icon if you wish */ }
+        ) {
+            // When the search bar is active, show the real-time results in a LazyColumn
+            LazyColumn {
+                items(filteredItems) { (pageIndex, itemIndex, foodItem) ->
+                    Text(
+                        text = foodItem.nimi,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .clickable {
+                                // When a search result is clicked:
+                                onItemSelected(pageIndex, itemIndex)
+                                // Hide keyboard, collapse SearchBar
+                                focusManager.clearFocus()
+                                active = false
+                            }
+                            .padding(8.dp),
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis
+                    )
+                }
             }
         }
     }
