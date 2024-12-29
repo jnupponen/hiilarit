@@ -15,33 +15,35 @@ import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun FoodPageContent(foodPage: FoodPage) {
-    var selectedItemIndex by remember { mutableStateOf<Int?>(null) }
-
+fun FoodPageContent(
+    foodPage: FoodPage,
+    selectedItemIndex: Int?, // Selected row index for highlighting
+    onItemSelected: (Int) -> Unit // Callback when an item is clicked
+) {
     Column(
         modifier = Modifier
             .fillMaxSize()
             .padding(start = 16.dp),
         verticalArrangement = Arrangement.Top
     ) {
+        // Page title
         Text(text = foodPage.pageTitle, style = MaterialTheme.typography.headlineMedium)
         Spacer(modifier = Modifier.height(8.dp))
 
+        // List of items in this page
         LazyColumn {
             itemsIndexed(foodPage.data) { index, foodItem ->
-                // Pass selectedItemIndex to FoodRow
-                FoodRow(selectedItemIndex, index, foodItem) { newIndex ->
-                    selectedItemIndex = newIndex
-                }
+                FoodRow(
+                    selectedItemIndex = selectedItemIndex,
+                    index = index,
+                    foodItem = foodItem,
+                    onItemClick = onItemSelected
+                )
             }
         }
     }

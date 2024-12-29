@@ -17,6 +17,8 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateMapOf
+import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
@@ -68,7 +70,24 @@ fun MainView(
     )
     val coroutineScope = rememberCoroutineScope()
 
+    // This map keeps track of which item is selected for each page
+    // e.g. selectedItems[pageIndex] = itemIndex
+    val selectedItems = remember { mutableStateMapOf<Int, Int?>() }
+
     Column(modifier = modifier.fillMaxSize()) {
+        // Top search bar
+        FoodSearch(
+            foodData = foodData,
+            onItemSelected = { pageIndex, itemIndex ->
+                // Highlight the clicked item
+                selectedItems[pageIndex] = itemIndex
+                // Navigate (animate) the pager to that page
+                coroutineScope.launch {
+                    pagerState.animateScrollToPage(pageIndex)
+                }
+            }
+        )
+
         // Top row: Page indicator (e.g. "1/17")
         PageIndicator(
             currentPage = pagerState.currentPage,
@@ -81,7 +100,14 @@ fun MainView(
             modifier = Modifier.weight(1f)
         ) { page ->
             val foodPage = foodData.pages[page]
-            FoodPageContent(foodPage)
+            FoodPageContent(
+                foodPage = foodPage,
+                selectedItemIndex = selectedItems[page],
+                onItemSelected = { newIndex ->
+                    // If the user taps in the list, highlight that item
+                    selectedItems[page] = newIndex
+                }
+            )
         }
 
         // Accordion tag cloud at the bottom
