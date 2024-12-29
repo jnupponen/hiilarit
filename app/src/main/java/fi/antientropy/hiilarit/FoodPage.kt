@@ -21,7 +21,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 
-
 @Composable
 fun FoodPageContent(foodPage: FoodPage) {
     var selectedItemIndex by remember { mutableStateOf<Int?>(null) }
@@ -37,24 +36,34 @@ fun FoodPageContent(foodPage: FoodPage) {
 
         Column {
             foodPage.data.forEachIndexed { index, foodItem ->
-                Row(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .clickable { selectedItemIndex = index }
-                        .background(
-                            if (selectedItemIndex == index) {
-                                MaterialTheme.colorScheme.primaryContainer
-                            } else {
-                                Color.Transparent
-                            }
-                        )
-                ) {
-                    Text(text = foodItem.nimi, modifier = Modifier.weight(2f))
-                    Text(text = foodItem.maara, modifier = Modifier.weight(1f))
-                    Text(text = foodItem.massa, modifier = Modifier.weight(1f))
-                    Text(text = foodItem.hiilihydraatit, modifier = Modifier.weight(1f))
-                }
+                FoodRow(selectedItemIndex, index, foodItem)
             }
         }
+    }
+}
+
+@Composable
+private fun FoodRow(
+    selectedItemIndex: Int?,
+    index: Int,
+    foodItem: FoodItem
+) {
+    var selectedItemIndex1 = selectedItemIndex
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .clickable { selectedItemIndex1 = index }
+            .background(
+                if (selectedItemIndex1 == index) {
+                    MaterialTheme.colorScheme.primaryContainer
+                } else {
+                    Color.Transparent
+                }
+            )
+    ) {
+        Text(text = foodItem.nimi, modifier = Modifier.weight(2f))
+        Text(text = foodItem.maara, modifier = Modifier.weight(1f))
+        Text(text = foodItem.massa, modifier = Modifier.weight(1f))
+        Text(text = foodItem.hiilihydraatit, modifier = Modifier.weight(1f))
     }
 }
