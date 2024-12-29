@@ -22,6 +22,8 @@ import androidx.compose.ui.unit.dp
 @Composable
 fun FoodPageContent(
     foodPage: FoodPage,
+    currentPage: Int,
+    totalPages: Int,
     selectedItemIndex: Int?, // Selected row index for highlighting
     onItemSelected: (Int) -> Unit // Callback when an item is clicked
 ) {
@@ -31,8 +33,14 @@ fun FoodPageContent(
             .padding(start = 16.dp),
         verticalArrangement = Arrangement.Top
     ) {
-        // Page title
-        Text(text = foodPage.pageTitle, style = MaterialTheme.typography.headlineMedium)
+        Spacer(modifier = Modifier.height(8.dp))
+        // Page title and number
+        Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
+            Text(text = foodPage.pageTitle, style = MaterialTheme.typography.headlineMedium)
+
+            PageIndicator(currentPage = currentPage, totalPages = totalPages)
+        }
+
         Spacer(modifier = Modifier.height(8.dp))
 
         // List of items in this page
@@ -47,6 +55,14 @@ fun FoodPageContent(
             }
         }
     }
+}
+
+@Composable
+fun PageIndicator(currentPage: Int, totalPages: Int) {
+    Text(
+        text = "${currentPage + 1}/$totalPages",
+        style = MaterialTheme.typography.bodyMedium
+    )
 }
 
 @Composable
