@@ -6,8 +6,12 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.layout.WindowInsetsSides
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.only
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.safeDrawing
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.material3.Scaffold
@@ -26,13 +30,25 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            HiilaritTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    val context = LocalContext.current
-                    val foodData = loadFoodData(context)
-                    MainView(modifier = Modifier.padding(innerPadding), foodData = foodData)
-                }
-            }
+            App()
+        }
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun App() {
+    HiilaritTheme {
+        Scaffold(
+            modifier = Modifier.fillMaxSize(),
+            // Use contentWindowInsets to avoid the topBar reserving space.
+            contentWindowInsets = WindowInsets.safeDrawing.only(
+                WindowInsetsSides.Bottom + WindowInsetsSides.Start + WindowInsetsSides.End
+            )
+        ) { innerPadding ->
+            val context = LocalContext.current
+            val foodData = loadFoodData(context)
+            MainView(modifier = Modifier.padding(innerPadding), foodData = foodData)
         }
     }
 }
