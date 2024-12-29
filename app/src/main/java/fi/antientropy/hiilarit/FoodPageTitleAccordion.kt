@@ -61,23 +61,27 @@ fun FoodPageTitleAccordion(
             verticalArrangement = Arrangement.spacedBy(16.dp) // Use spacedBy for vertical spacing
         ) {
             foodData.pages.forEachIndexed { index, page ->
-                Text(
-                    text = page.pageTitle,
-                    style = MaterialTheme.typography.bodyLarge,
-                    modifier = Modifier
-                        .clip(RoundedCornerShape(16.dp))
-                        .clickable {
-                            // When a page is selected, navigate and collapse
-                            onPageSelected(index)
-                            isExpanded = false
-                        }
-                        .background(
-                            color = MaterialTheme.colorScheme.secondary.copy(alpha = 0.1f),
-                            shape = RoundedCornerShape(16.dp)
-                        )
-                        .padding(horizontal = 16.dp, vertical = 12.dp)
-                )
+                FoodPageTitleTag(page.pageTitle) {
+                    onPageSelected(index)
+                    isExpanded = false
+                }
             }
         }
     }
+}
+
+@Composable
+fun FoodPageTitleTag(title: String, onClick: () -> Unit) {
+    Text(
+        text = title,
+        style = MaterialTheme.typography.bodyLarge,
+        modifier = Modifier
+            .clip(RoundedCornerShape(16.dp))
+            .clickable { onClick() }
+            .background(
+                color = MaterialTheme.colorScheme.secondary.copy(alpha = 0.1f),
+                shape = RoundedCornerShape(16.dp)
+            )
+            .padding(horizontal = 16.dp, vertical = 12.dp)
+    )
 }
