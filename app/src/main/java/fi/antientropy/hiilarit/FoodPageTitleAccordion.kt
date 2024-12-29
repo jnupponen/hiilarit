@@ -3,12 +3,15 @@ package fi.antientropy.hiilarit
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.KeyboardArrowDown
 import androidx.compose.material.icons.filled.KeyboardArrowUp
@@ -31,6 +34,7 @@ fun FoodPageTitleAccordion(
     onPageSelected: (Int) -> Unit
 ) {
     var isExpanded by remember { mutableStateOf(false) }
+    val scrollState = rememberScrollState()
 
     Row(
         modifier = Modifier
@@ -53,17 +57,23 @@ fun FoodPageTitleAccordion(
 
     // Content visible only if accordion is expanded
     if (isExpanded) {
-        FlowRow(
+        // Wrap FlowRow in a Column with vertical scroll
+        Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(16.dp),
-            horizontalArrangement = Arrangement.spacedBy(16.dp), // Use spacedBy for horizontal spacing
-            verticalArrangement = Arrangement.spacedBy(16.dp) // Use spacedBy for vertical spacing
+                .verticalScroll(scrollState) // Enable vertical scrolling
+                .padding(16.dp)
         ) {
-            foodData.pages.forEachIndexed { index, page ->
-                FoodPageTitleTag(page.pageTitle) {
-                    onPageSelected(index)
-                    isExpanded = false
+            FlowRow(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.spacedBy(16.dp),
+                verticalArrangement = Arrangement.spacedBy(16.dp)
+            ) {
+                foodData.pages.forEachIndexed { index, page ->
+                    FoodPageTitleTag(page.pageTitle) {
+                        onPageSelected(index)
+                        isExpanded = false
+                    }
                 }
             }
         }
