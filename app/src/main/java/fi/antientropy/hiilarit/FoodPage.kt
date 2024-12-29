@@ -10,6 +10,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -34,8 +36,8 @@ fun FoodPageContent(foodPage: FoodPage) {
         Text(text = foodPage.pageTitle, style = MaterialTheme.typography.headlineMedium)
         Spacer(modifier = Modifier.height(8.dp))
 
-        Column {
-            foodPage.data.forEachIndexed { index, foodItem ->
+        LazyColumn { // Wrap with LazyColumn for vertical scrolling
+            itemsIndexed(foodPage.data) { index, foodItem ->
                 FoodRow(selectedItemIndex, index, foodItem)
             }
         }
@@ -67,3 +69,4 @@ private fun FoodRow(
         Text(text = foodItem.hiilihydraatit, modifier = Modifier.weight(1f))
     }
 }
+
