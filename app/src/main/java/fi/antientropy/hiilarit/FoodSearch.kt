@@ -1,7 +1,6 @@
 package fi.antientropy.hiilarit
 
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
@@ -60,51 +59,50 @@ fun FoodSearch(
         }
     }
 
-    Column(modifier = Modifier.fillMaxWidth()) {
-        // Material3 SearchBar (Experimental API)
-        SearchBar(
-            query = query,
-            onQueryChange = { query = it },
-            onSearch = {
-                // Called when the user hits the search keyboard action
-                // Optionally close the search to show main content
-                focusManager.clearFocus()
-                active = false
-            },
-            active = active,
-            onActiveChange = { active = it },
-            placeholder = {
-                Text(text = "Etsi ruokaa...")
-            },
-            modifier = Modifier.fillMaxWidth(),
-            // Optional icons:
-            leadingIcon = {
-                Icon(
-                    imageVector = Icons.Filled.Search,
-                    contentDescription = "Search"
+
+    // Material3 SearchBar (Experimental API)
+    SearchBar(
+        query = query,
+        onQueryChange = { query = it },
+        onSearch = {
+            // Called when the user hits the search keyboard action
+            // Optionally close the search to show main content
+            focusManager.clearFocus()
+            active = false
+        },
+        active = active,
+        onActiveChange = { active = it },
+        placeholder = {
+            Text(text = "Etsi ruokaa...")
+        },
+        modifier = Modifier.fillMaxWidth(),
+        // Optional icons:
+        leadingIcon = {
+            Icon(
+                imageVector = Icons.Filled.Search,
+                contentDescription = "Search"
+            )
+        },
+        trailingIcon = { /* Add a trailing icon if you wish */ }
+    ) {
+        // When the search bar is active, show the real-time results in a LazyColumn
+        LazyColumn {
+            items(filteredItems) { (pageIndex, itemIndex, foodItem) ->
+                Text(
+                    text = foodItem.nimi,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .clickable {
+                            // When a search result is clicked:
+                            onItemSelected(pageIndex, itemIndex)
+                            // Hide keyboard, collapse SearchBar
+                            focusManager.clearFocus()
+                            active = false
+                        }
+                        .padding(8.dp),
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis
                 )
-            },
-            trailingIcon = { /* Add a trailing icon if you wish */ }
-        ) {
-            // When the search bar is active, show the real-time results in a LazyColumn
-            LazyColumn {
-                items(filteredItems) { (pageIndex, itemIndex, foodItem) ->
-                    Text(
-                        text = foodItem.nimi,
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .clickable {
-                                // When a search result is clicked:
-                                onItemSelected(pageIndex, itemIndex)
-                                // Hide keyboard, collapse SearchBar
-                                focusManager.clearFocus()
-                                active = false
-                            }
-                            .padding(8.dp),
-                        maxLines = 1,
-                        overflow = TextOverflow.Ellipsis
-                    )
-                }
             }
         }
     }
