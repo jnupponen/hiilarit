@@ -36,9 +36,12 @@ fun FoodPageContent(foodPage: FoodPage) {
         Text(text = foodPage.pageTitle, style = MaterialTheme.typography.headlineMedium)
         Spacer(modifier = Modifier.height(8.dp))
 
-        LazyColumn { // Wrap with LazyColumn for vertical scrolling
+        LazyColumn {
             itemsIndexed(foodPage.data) { index, foodItem ->
-                FoodRow(selectedItemIndex, index, foodItem)
+                // Pass selectedItemIndex to FoodRow
+                FoodRow(selectedItemIndex, index, foodItem) { newIndex ->
+                    selectedItemIndex = newIndex
+                }
             }
         }
     }
@@ -48,15 +51,15 @@ fun FoodPageContent(foodPage: FoodPage) {
 private fun FoodRow(
     selectedItemIndex: Int?,
     index: Int,
-    foodItem: FoodItem
+    foodItem: FoodItem,
+    onItemClick: (Int) -> Unit // Callback to update selectedItemIndex
 ) {
-    var selectedItemIndex1 = selectedItemIndex
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .clickable { selectedItemIndex1 = index }
+            .clickable { onItemClick(index) } // Call the callback on click
             .background(
-                if (selectedItemIndex1 == index) {
+                if (selectedItemIndex == index) {
                     MaterialTheme.colorScheme.primaryContainer
                 } else {
                     Color.Transparent
