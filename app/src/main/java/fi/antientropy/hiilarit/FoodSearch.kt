@@ -30,6 +30,7 @@ import androidx.compose.ui.unit.dp
  */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
+@Suppress("LongMethod")
 fun FoodSearch(
     foodData: FoodData,
     onItemSelected: (pageIndex: Int, itemIndex: Int) -> Unit
@@ -58,8 +59,6 @@ fun FoodSearch(
             }
         }
     }
-
-
     // Material3 SearchBar (Experimental API)
     SearchBar(
         query = query,
