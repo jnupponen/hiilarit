@@ -113,13 +113,3 @@ fun MainView(
         )
     }
 }
-
-@Preview(showBackground = true)
-@Composable
-fun FoodTablePreview() {
-    val context = LocalContext.current
-    val foodData = loadFoodData(context = context)
-    HiilaritTheme {
-        MainView(foodData = foodData)
-    }
-}
