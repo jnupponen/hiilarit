@@ -40,18 +40,22 @@ fun FoodPageTitleAccordion(
         modifier = Modifier
             .fillMaxWidth()
             .clickable { isExpanded = !isExpanded }
-            .padding(16.dp),
+            .padding(16.dp)
+            .background(MaterialTheme.colorScheme.inverseOnSurface),
         horizontalArrangement = Arrangement.SpaceBetween
     ) {
+        val accordionPadding = Modifier.padding(12.dp)
         Text(
-            text = if (isExpanded) "Piilota ryhmät" else "Näytä ryhmät",
-            style = MaterialTheme.typography.titleLarge
+            modifier = accordionPadding,
+            text = if (isExpanded) "Piilota ruokaryhmät..." else "Näytä ruokaryhmät...",
+            style = MaterialTheme.typography.titleLarge,
         )
         val icon =
             if (isExpanded) Icons.Default.KeyboardArrowUp else Icons.Default.KeyboardArrowDown
         Icon(
+            modifier = accordionPadding,
             imageVector = icon,
-            contentDescription = null
+            contentDescription = "Icons.Default.KeyboardArrowUp or Icons.Default.KeyboardArrowDown"
         )
     }
 
