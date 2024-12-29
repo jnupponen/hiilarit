@@ -18,6 +18,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 
@@ -51,6 +52,7 @@ fun FoodPageContent(
 
         Spacer(modifier = Modifier.height(8.dp))
 
+        FoodHeader()
         // List of items in this page
         LazyColumn {
             itemsIndexed(foodPage.data) { index, foodItem ->
@@ -96,6 +98,19 @@ private fun FoodRow(
         Text(text = foodItem.maara, modifier = Modifier.weight(1f))
         Text(text = foodItem.massa, modifier = Modifier.weight(1f))
         Text(text = foodItem.hiilihydraatit, modifier = Modifier.weight(1f))
+    }
+}
+
+@Composable
+private fun FoodHeader() {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+    ) {
+        Text(text = "Nimi", modifier = Modifier.weight(2f), fontWeight = FontWeight.Bold)
+        Text(text = "Määrä", modifier = Modifier.weight(1f), fontWeight = FontWeight.Bold)
+        Text(text = "Massa", modifier = Modifier.weight(1f), fontWeight = FontWeight.Bold)
+        Text(text = "Hiilihydr.", modifier = Modifier.weight(1f), fontWeight = FontWeight.Bold)
     }
 }
 
