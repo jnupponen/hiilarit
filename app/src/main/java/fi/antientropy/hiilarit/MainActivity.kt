@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.ExperimentalFoundationApi
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.WindowInsets
@@ -25,6 +26,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import fi.antientropy.hiilarit.ui.theme.PaperDesk
 import fi.antientropy.hiilarit.ui.theme.HiilaritTheme
 import kotlinx.coroutines.launch
 
@@ -88,7 +90,11 @@ fun MainView(
 
         // HorizontalPager for pages, with PageIndicator overlaid so it
         // does not invalidate every page on a boundary cross.
-        Box(modifier = Modifier.weight(1f)) {
+        Box(
+            modifier = Modifier
+                .weight(1f)
+                .background(PaperDesk)
+        ) {
             HorizontalPager(
                 state = pagerState,
                 modifier = Modifier.fillMaxSize()
@@ -108,7 +114,7 @@ fun MainView(
                 totalPages = foodData.pages.size,
                 modifier = Modifier
                     .align(Alignment.TopEnd)
-                    .padding(top = 8.dp, end = 8.dp)
+                    .padding(top = 24.dp, end = 24.dp)
             )
         }
 
