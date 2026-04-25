@@ -13,6 +13,7 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.LocalTextStyle
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.SearchBar
+import androidx.compose.material3.SearchBarDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
@@ -40,7 +41,7 @@ fun FoodSearch(
     onItemSelected: (pageIndex: Int, itemIndex: Int) -> Unit
 ) {
     var query by remember { mutableStateOf("") }
-    var active by remember { mutableStateOf(false) }
+    var expanded by remember { mutableStateOf(false) }
     val focusManager = LocalFocusManager.current
 
     // Flatten all pages into a single list so we can filter easily.
@@ -64,37 +65,37 @@ fun FoodSearch(
         }
     }
     CompositionLocalProvider(LocalTextStyle provides MaterialTheme.typography.bodyLarge) {
-        // Material3 SearchBar (Experimental API)
         SearchBar(
-            query = query,
-            onQueryChange = { query = it },
-            onSearch = {
-                // Called when the user hits the search keyboard action
-                // Optionally close the search to show main content
-                focusManager.clearFocus()
-                active = false
-            },
-            active = active,
-            onActiveChange = { active = it },
-            placeholder = {
-                Text(
-                    text = "Etsi ruokaa...",
-                    maxLines = 1
+            inputField = {
+                SearchBarDefaults.InputField(
+                    query = query,
+                    onQueryChange = { query = it },
+                    onSearch = {
+                        focusManager.clearFocus()
+                        expanded = false
+                    },
+                    expanded = expanded,
+                    onExpandedChange = { expanded = it },
+                    placeholder = {
+                        Text(
+                            text = "Etsi ruokaa...",
+                            maxLines = 1
+                        )
+                    },
+                    leadingIcon = {
+                        Icon(
+                            imageVector = Icons.Filled.Search,
+                            contentDescription = "Search"
+                        )
+                    }
                 )
             },
+            expanded = expanded,
+            onExpandedChange = { expanded = it },
             modifier = Modifier
                 .fillMaxWidth()
-                .heightIn(min = 56.dp),
-            // Optional icons:
-            leadingIcon = {
-                Icon(
-                    imageVector = Icons.Filled.Search,
-                    contentDescription = "Search"
-                )
-            },
-            trailingIcon = { /* Add a trailing icon if you wish */ }
+                .heightIn(min = 56.dp)
         ) {
-            // When the search bar is active, show the real-time results in a LazyColumn
             LazyColumn {
                 items(filteredItems) { (pageIndex, itemIndex, foodItem) ->
                     Text(
@@ -102,11 +103,9 @@ fun FoodSearch(
                         modifier = Modifier
                             .fillMaxWidth()
                             .clickable {
-                                // When a search result is clicked:
                                 onItemSelected(pageIndex, itemIndex)
-                                // Hide keyboard, collapse SearchBar
                                 focusManager.clearFocus()
-                                active = false
+                                expanded = false
                             }
                             .padding(8.dp),
                         maxLines = 1,
