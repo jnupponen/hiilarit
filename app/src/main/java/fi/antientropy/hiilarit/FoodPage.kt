@@ -10,12 +10,11 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.itemsIndexed
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
@@ -25,8 +24,6 @@ import androidx.compose.ui.unit.dp
 @Composable
 fun FoodPageContent(
     foodPage: FoodPage,
-    currentPage: Int,
-    totalPages: Int,
     selectedItemIndex: Int?, // Selected row index for highlighting
     onItemSelected: (Int) -> Unit // Callback when an item is clicked
 ) {
@@ -37,25 +34,23 @@ fun FoodPageContent(
         verticalArrangement = Arrangement.Top
     ) {
         Spacer(modifier = Modifier.height(8.dp))
-        // Page title and number
-        Row(modifier = Modifier.fillMaxWidth(), verticalAlignment = Alignment.Top) {
-            Text(
-                text = foodPage.pageTitle,
-                style = MaterialTheme.typography.headlineMedium,
-                modifier = Modifier.weight(1f),
-                maxLines = 2,
-                overflow = TextOverflow.Ellipsis
-            )
-
-            PageIndicator(currentPage = currentPage, totalPages = totalPages)
-        }
+        Text(
+            text = foodPage.pageTitle,
+            style = MaterialTheme.typography.headlineMedium,
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(end = 80.dp), // reserve space for overlaid PageIndicator
+            maxLines = 2,
+            overflow = TextOverflow.Ellipsis
+        )
 
         Spacer(modifier = Modifier.height(8.dp))
 
         FoodHeader()
-        // List of items in this page
-        LazyColumn {
-            itemsIndexed(foodPage.data) { index, foodItem ->
+        Column(
+            modifier = Modifier.verticalScroll(rememberScrollState())
+        ) {
+            foodPage.data.forEachIndexed { index, foodItem ->
                 FoodRow(
                     selectedItemIndex = selectedItemIndex,
                     index = index,
@@ -68,10 +63,11 @@ fun FoodPageContent(
 }
 
 @Composable
-fun PageIndicator(currentPage: Int, totalPages: Int) {
+fun PageIndicator(currentPage: Int, totalPages: Int, modifier: Modifier = Modifier) {
     Text(
         text = "${currentPage + 1}/$totalPages",
-        style = MaterialTheme.typography.bodyMedium
+        style = MaterialTheme.typography.bodyMedium,
+        modifier = modifier
     )
 }
 
@@ -113,4 +109,3 @@ private fun FoodHeader() {
         Text(text = "Hiilihydr.", modifier = Modifier.weight(1f), fontWeight = FontWeight.Bold)
     }
 }
-

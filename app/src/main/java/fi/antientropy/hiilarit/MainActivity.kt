@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.ExperimentalFoundationApi
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.WindowInsetsSides
@@ -19,9 +20,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateMapOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import fi.antientropy.hiilarit.ui.theme.HiilaritTheme
 import kotlinx.coroutines.launch
 
@@ -83,21 +86,29 @@ fun MainView(
             }
         )
 
-        // HorizontalPager for pages
-        HorizontalPager(
-            state = pagerState,
-            modifier = Modifier.weight(1f)
-        ) { page ->
-            val foodPage = foodData.pages[page]
-            FoodPageContent(
-                foodPage = foodPage,
+        // HorizontalPager for pages, with PageIndicator overlaid so it
+        // does not invalidate every page on a boundary cross.
+        Box(modifier = Modifier.weight(1f)) {
+            HorizontalPager(
+                state = pagerState,
+                modifier = Modifier.fillMaxSize()
+            ) { page ->
+                val foodPage = foodData.pages[page]
+                FoodPageContent(
+                    foodPage = foodPage,
+                    selectedItemIndex = selectedItems[page],
+                    onItemSelected = { newIndex ->
+                        // If the user taps in the list, highlight that item
+                        selectedItems[page] = newIndex
+                    }
+                )
+            }
+            PageIndicator(
                 currentPage = pagerState.currentPage,
                 totalPages = foodData.pages.size,
-                selectedItemIndex = selectedItems[page],
-                onItemSelected = { newIndex ->
-                    // If the user taps in the list, highlight that item
-                    selectedItems[page] = newIndex
-                }
+                modifier = Modifier
+                    .align(Alignment.TopEnd)
+                    .padding(top = 8.dp, end = 8.dp)
             )
         }
 
